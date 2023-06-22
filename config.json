@@ -1,0 +1,56 @@
+{
+    "settings": {
+        "copies_directory": "file_copies",
+        "deploy_files_directory": "files",
+        "os": "Ubuntu",
+        "current_package_manager":"apt",
+        "confirm_mode": false,
+        "add_banner": false,
+        "test_mode":true,
+        "package_managers":[]
+    },
+    "registry": [
+        {
+            "deploy_fname": "bashrc.txt",
+            "registry_type": "file",
+            "file_name": ".bashrc",
+            "destination": "~/",
+            "write_mode": "w",
+            "save_backup": true,
+            "desc": "bashrc config"
+        },
+        {
+            "deploy_fname": "vimrc.txt",
+            "registry_type": "file",
+            "file_name": "init.vim",
+            "destination": "~/.config/nvim/",
+            "write_mode": "w",
+            "save_backup": false,
+            "desc": "neovim config"
+        },
+        {
+            "deploy_fname": "zshrc.txt",
+            "registry_type": "file",
+            "file_name": ".zshrc",
+            "destination": "~/",
+            "write_mode": "w",
+            "save_backup": true,
+            "desc": "zshrc config"
+        },
+        {
+            "deploy_fname": "big_dick.txt",
+            "registry_type": "file",
+            "file_name": "hey.txt",
+            "destination": "~/Desktop/asdf/qwer/",
+            "write_mode": "w",
+            "save_backup": false,
+            "desc": "testing "
+        }
+    ],
+    "packages": [
+        "ncdu",
+        "btop",
+        "htop",
+        "neofetch"
+    ]
+}

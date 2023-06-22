@@ -1,0 +1,73 @@
+-------------------------------------------------------------------
+
+PROGRAM:        Quick Deploy 0.0.1
+PROGAMMER:      Jake Springer
+DATE:           6/13/23
+PYTHON VERS:    3.10.3
+
+-------------------------------------------------------------------
+
+						///  Overview  ///
+
+Quickly writes/alters config files for new computers/distro installs.
+I'm getting really tired of copy/pasting bashrc's and ssh config files.
+Meant to be put on some sort of external storage and ran on a new machine.
+
+
+-------------------------------------------------------------------
+		
+						///  Files to Alter  ///
+- bashrc 
+-.ssh/config 
+- /etc/profile (path stuff)
+- vscode extensions
+- wallpapers maybe?
+
+-------------------------------------------------------------------
+		
+						///  Ideas  ///
+
+- Need to figure out a way to install packages, that would really 
+  make this lit. 
+
+-------------------------------------------------------------------
+
+						///  To-Do  ///
+
+[0] clear registry option (really for testing)
+[0] copy files 
+[0] check if required directories exist, create them if they don't 
+[0] "write" function
+[0] "append" function
+[0] logging would be very useful
+[0] auto add home directory path to regs
+[0] implement settings
+[0] write_mode flag should be either "a+" or "w"
+[0] Add and configure different package manager commands
+
+[X] create copies for files w the copy flag
+
+-------------------------------------------------------------------
+
+						///  Notes  ///
+
+- use os.path.expanduser('~') for getting the home dir
+- Creating a full directory structure:
+	from pathlib import Path
+	Path("/dir1/dir2/dir3").mkdir(parents=True, exist_ok=True)
+
+- downloaded packages
+- system update
+- logging 
+- better reporting 
+
+-------------------------------------------------------------------
+
+						///  Bugs  ////
+
+- Broken stuff that I've noticed or has been relayed to me.
+
+[0] OUTSTANDING
+[X] FIXED / DATE / VERSION
+
+-------------------------------------------------------------------
